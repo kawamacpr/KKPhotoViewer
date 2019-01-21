@@ -44,5 +44,16 @@ class ViewController: UICollectionViewController {
     
     return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "ClickCell") {
+            if let collectionView = self.collectionView {
+                var IndexPath = collectionView.indexPath(for: sender as! CollectionViewCell )
+                let nextViewController = segue.destination as! PhotoBrowserViewController
+                nextViewController.asset = self.fetchResult[IndexPath!.item] as! PHAsset
+            }
+            
+        }
+    }
 }
 

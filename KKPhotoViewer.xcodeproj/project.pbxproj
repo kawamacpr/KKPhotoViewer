@@ -14,6 +14,7 @@
 		791E4C2121C0E5D10004504F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 791E4C1F21C0E5D10004504F /* LaunchScreen.storyboard */; };
 		791E4C2C21C0E5D10004504F /* KKPhotoViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791E4C2B21C0E5D10004504F /* KKPhotoViewerTests.swift */; };
 		791E4C3721C0E5D10004504F /* KKPhotoViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791E4C3621C0E5D10004504F /* KKPhotoViewerUITests.swift */; };
+		79406A8521F5AC570072996E /* PhotoBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79406A8421F5AC570072996E /* PhotoBrowserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		791E4C3221C0E5D10004504F /* KKPhotoViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KKPhotoViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		791E4C3621C0E5D10004504F /* KKPhotoViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKPhotoViewerUITests.swift; sourceTree = "<group>"; };
 		791E4C3821C0E5D10004504F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79406A8421F5AC570072996E /* PhotoBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoBrowserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				791E4C1621C0E5CD0004504F /* AppDelegate.swift */,
+				79406A8421F5AC570072996E /* PhotoBrowserViewController.swift */,
 				791E4C1821C0E5CD0004504F /* ViewController.swift */,
 				791E4C1A21C0E5CD0004504F /* Main.storyboard */,
 				791E4C1D21C0E5D10004504F /* Assets.xcassets */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79406A8521F5AC570072996E /* PhotoBrowserViewController.swift in Sources */,
 				791E4C1921C0E5CD0004504F /* ViewController.swift in Sources */,
 				791E4C1721C0E5CD0004504F /* AppDelegate.swift in Sources */,
 			);
