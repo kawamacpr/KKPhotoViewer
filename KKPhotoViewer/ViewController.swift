@@ -11,7 +11,7 @@ class ViewController: UICollectionViewController {
     var cellSize: CGSize!
     
     override func awakeFromNib() {
-        fetchResult = PHAsset.fetchAssets(with: nil) as! PHFetchResult<AnyObject>
+        fetchResult = PHAsset.fetchAssets(with: nil) as? PHFetchResult<AnyObject>
         imageManager = PHCachingImageManager()
         }
     
@@ -50,7 +50,7 @@ class ViewController: UICollectionViewController {
             if let collectionView = self.collectionView {
                 var IndexPath = collectionView.indexPath(for: sender as! CollectionViewCell )
                 let nextViewController = segue.destination as! PhotoBrowserViewController
-                nextViewController.asset = self.fetchResult[IndexPath!.item] as! PHAsset
+                nextViewController.asset = self.fetchResult[IndexPath!.item] as? PHAsset
             }
             
         }
